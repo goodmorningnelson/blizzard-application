@@ -16,7 +16,7 @@ html(ng-app="riot-app")
     link(href='//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet')
     script(src='js/app.js', type='text/javascript')
     
-    title Riot Application
+    title Thomas Ruehr - Blizzard Application
   body.base
     .globalContainer(ng-controller="appCtrl")
       .box.namePlate
@@ -30,19 +30,17 @@ html(ng-app="riot-app")
           .innerCircle
       #coverAnchor
       .box.coverLetter
-        p.first Dear Riot,
+        p.first Dear Blizzard,
         p I am a French-American digital designer, self-taught Frontend web developer and passionate aficionado of imaginary worlds. 
         p I have had multiple experiences related to the video game and E-sport industries, worked with actors of the scene (Twitch, Gamoloco, Millenium), and built products to help the community (Kapsuli). Additionally, on a personal level, I have been involved in and attended live events as well as played on most of the current major titles competitively.
         p I now wish to build a career in that sector within a company I respect, to help build a product that I love.
-        p My experience in this area as well as my confidence in my own abilities has led me to apply for a position in the visual design division at Riot Games.
+        p My experience in this area as well as my confidence in my own abilities has led me to apply for a position in the visual UI/UX division at Blizzard.
 
         p Learn more about me by scrolling down.
         p Thank you for your time and consideration.
 
         p.tag1 Thomas Ruehr
         p.tag2 "The Morning Owl" 
-        //.hireMeBox
-          //p I would love to be considered for a position at Riot Games
         .decoCorner.topLeft
           .cornerDecoCircle
         .decoCorner.topRight
@@ -56,7 +54,7 @@ html(ng-app="riot-app")
             img.shadow(src="./img/cover-icon.svg", alt="")
         .decoBottom
       .box.kapsuliIntro 
-        p what can I bring to Riot Games right now
+        p what can I bring to Blizzard right now.
         .decoTop
         .decoBot
       #kapsuliAnchor
@@ -65,15 +63,15 @@ html(ng-app="riot-app")
           .playerSelectorsBox
             .playerContainer
               .player.kapsuliPlayer(ng-class="{'on':playerSelectorModel === 'kap'}")
-                img(src="./img/kapsuli.png", alt="")
+                img(src="./img/overwatch.png", alt="")
+              .player.lcsPlayer(ng-class="{'on':playerSelectorModel === 'lcs'}")
+                img(src="./img/blizz-capsule.jpg", alt="")
               .player.allStarPlayer(ng-class="{'on':playerSelectorModel === 'star'}")
                 img(src="./img/all-star.jpg", alt="")
-              .player.lcsPlayer(ng-class="{'on':playerSelectorModel === 'lcs'}")
-                img(src="./img/lcs.jpg", alt="")
             .selectors
               .kap.select(ng-model="playerSelectorModel" uib-btn-radio="'kap'") Kapsuli Player
-              .star.select(ng-model="playerSelectorModel" uib-btn-radio="'star'") All Star 2016
-              .lcs.select(ng-model="playerSelectorModel" uib-btn-radio="'lcs'") LCS 2016
+              .lcs.select(ng-model="playerSelectorModel" uib-btn-radio="'lcs'") HearthStone
+              .star.select(ng-model="playerSelectorModel" uib-btn-radio="'star'") Lol All-Star
               
         .contentBox
           h1.title Kapsuli
@@ -87,10 +85,10 @@ html(ng-app="riot-app")
                 p • A customizable player, helping you build your brand.
                 p • Real estate for additional revenue stream through extended sponsor exposure.
               .lcsDescription(ng-show="playerSelectorModel === 'lcs'")
-                h1 LCS 2016 Player
+                h1 HearthStone Player
                 p • Improved brand exposure
-                p • Integration capabilities for multiple API to feed information about games being played, player stats or schedules.
-                p • Link to external ressources (LolEsport website for example).
+                p • Integration capabilities for multiple API to feed information about games being played (Decks, stats)
+                p • Link to external ressources (HearthStone, Battle.net).
               .starDescription(ng-show="playerSelectorModel === 'star'")
                 h1 All Star 2016 Player
                 p • Live update of event status (API based), to notify your audience in real time on Twitter 
@@ -99,7 +97,7 @@ html(ng-app="riot-app")
           .access
         .decoBot    
       .box.skillsIntro
-        p What will I be bringing as a Rioter ?
+        p What will I be bringing to the table ?
         .decoTop
         .decoBot
         
@@ -114,7 +112,6 @@ html(ng-app="riot-app")
           
         .skillContent
           .content.tool(ng-show="skillSelectorModel === 'tool'")
-            p.quote "I am a mechanical player. I can CS well and land clutch skill shots."
             p I have not only a professional grade mastery of common tools used across the creative industry, but also a strong working experience with front-end web development (user interface, user experience). I am also able to code using the best modern practices.
             p This combination of abilities allows me to understand the possibilities and limitations of implementing certain features in a digital space. It also provides me with the means to interact with both designers and developers to establish efficient channels of communication. 
             p.note Design : Adobe Creative Suit (Photoshop, Illustrator, InDesign, After Effect, Edge Animate, etc.), Sketch, photography, 3D renderings...
@@ -139,7 +136,6 @@ html(ng-app="riot-app")
                 //.visuBox.p
                   //img.pixel(src="./img/toolVisu/kent-desk.png")
           .content.product(ng-show="skillSelectorModel === 'product'")
-            p.quote "I have game knowledge, and I know how to analyse meta trends" 
             p My experience with Kapsuli brought me a strong understanding of how to build a product catering to the gaming community. In the process I have encountered many situations, from brainstorming ideas, establishing strong UX and UI foundations, technical development problem solving, media campaign implications, adressing community feedback and modifications entailed by it.
             p I have learned that to build a successful product that resonates and engages with the gaming community, one needs to communicate not only with the hard core players, reddit investigators, and meme creators but also with the casual players, with very few fantasy and game-related references.
             p I can identify with those two audiences and discern their current and future needs.
@@ -154,7 +150,6 @@ html(ng-app="riot-app")
                 .refresh
                   img(src="./img/shroom-refresh.svg", alt="")
           .content.knowledge(ng-show="skillSelectorModel === 'knowledge'")
-            p.quote "I have spent over 150 days of my life on league of legends"
             p I strive to be proud of what I am building, and this pride not only pushes me to deliver a strong product but also challenges me to be better and more efficient at what I do. I pride myself in constantly learning and growing as a designer.
             p I have dedicated this last year to building Kapsuli. I now wish to bring all my experiences to bear and help further improve the game that I love or build new content and products for Riot Games.
             .dedicationDeco
@@ -162,7 +157,6 @@ html(ng-app="riot-app")
           .content.observation(ng-show="skillSelectorModel === 'observation'")
             p I keep myself informed of the latest design and tech trends to make the best use of current and upcoming innovation in the field I am working in.  
           .content.teamwork(ng-show="skillSelectorModel === 'teamwork'")
-            p.quote "I am a Shen one-trick pony and will not hesitate to come to the rescue and make clutching pro flash taunts."
             p Although I am very efficient working alone, I work best as part of a unit. I enjoy working with others and take pride in facilitating communication between different trades. I also work well under pressure and deliver high quality product in a timely fashion.
             p I have working experience using tools below to improve team coordination and workflow, either to enhance communication within the team or to devise work protocols to ensure an efficient work environment. 
             .iconBox 
@@ -254,7 +248,7 @@ html(ng-app="riot-app")
             .description(ng-model="navBtnModel" uib-btn-radio="'resume'" ng-class="{'on': scroll > 2600 && scroll < 3400}") Resume
           a(anchor-smooth-scroll="contactAnchor")
             .description(ng-model="navBtnModel" uib-btn-radio="'contact'" ng-class="{'on': scroll > 3400}") Contact
-        a(href="https://github.com/goodmorningnelson/riot-app", target="_blank")
+        a(href="https://github.com/goodmorningnelson/blizzard-application", target="_blank")
           .githubLink
             .tooltipGit Access the GitHub Repo of this page.
         

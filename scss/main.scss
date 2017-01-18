@@ -443,6 +443,7 @@ html {
                       font-size: 23px;
                       font-weight: 300;
                       padding-top: 7px;
+                      cursor: pointer;
 
                       &:hover {
                         background-color: lighten($c-disabled, 10%);
@@ -456,8 +457,8 @@ html {
                       }
 
                       &.kap {border-right: 1px solid darken($c-disabled, 10%);}
-                      &.lcs {border-left: 1px solid darken($c-disabled, 10%);}
-                      &.star {width: 34%;}
+                      &.lcs {width: 34%;}
+                      &.star {border-left: 1px solid darken($c-disabled, 10%);}
 
                     }
                   }

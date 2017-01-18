@@ -13,7 +13,7 @@
     <script src="js/anchor_smooth_scroll.js" type="text/javascript"></script>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <script src="js/app.js" type="text/javascript"></script>
-    <title>Riot Application</title>
+    <title>Thomas Ruehr - Blizzard Application</title>
   </head>
   <body class="base">
     <div ng-controller="appCtrl" class="globalContainer">
@@ -32,17 +32,15 @@
       </div>
       <div id="coverAnchor"></div>
       <div class="box coverLetter">
-        <p class="first">Dear Riot,</p>
+        <p class="first">Dear Blizzard,</p>
         <p>I am a French-American digital designer, self-taught Frontend web developer and passionate aficionado of imaginary worlds. </p>
         <p>I have had multiple experiences related to the video game and E-sport industries, worked with actors of the scene (Twitch, Gamoloco, Millenium), and built products to help the community (Kapsuli). Additionally, on a personal level, I have been involved in and attended live events as well as played on most of the current major titles competitively.</p>
         <p>I now wish to build a career in that sector within a company I respect, to help build a product that I love.</p>
-        <p>My experience in this area as well as my confidence in my own abilities has led me to apply for a position in the visual design division at Riot Games.</p>
+        <p>My experience in this area as well as my confidence in my own abilities has led me to apply for a position in the visual UI/UX division at Blizzard.</p>
         <p>Learn more about me by scrolling down.</p>
         <p>Thank you for your time and consideration.</p>
         <p class="tag1">Thomas Ruehr</p>
         <p class="tag2">"The Morning Owl" </p>
-        <!--.hireMeBox//p I would love to be considered for a position at Riot Games
-        -->
         <div class="decoCorner topLeft">
           <div class="cornerDecoCircle"></div>
         </div>
@@ -61,7 +59,7 @@
         <div class="decoBottom"></div>
       </div>
       <div class="box kapsuliIntro"> 
-        <p>what can I bring to Riot Games right now</p>
+        <p>what can I bring to Blizzard right now.</p>
         <div class="decoTop"></div>
         <div class="decoBot"></div>
       </div>
@@ -70,14 +68,14 @@
         <div class="playerBox">
           <div class="playerSelectorsBox">
             <div class="playerContainer">
-              <div ng-class="{'on':playerSelectorModel === 'kap'}" class="player kapsuliPlayer"><img src="./img/kapsuli.png" alt=""></div>
+              <div ng-class="{'on':playerSelectorModel === 'kap'}" class="player kapsuliPlayer"><img src="./img/overwatch.png" alt=""></div>
+              <div ng-class="{'on':playerSelectorModel === 'lcs'}" class="player lcsPlayer"><img src="./img/blizz-capsule.jpg" alt=""></div>
               <div ng-class="{'on':playerSelectorModel === 'star'}" class="player allStarPlayer"><img src="./img/all-star.jpg" alt=""></div>
-              <div ng-class="{'on':playerSelectorModel === 'lcs'}" class="player lcsPlayer"><img src="./img/lcs.jpg" alt=""></div>
             </div>
             <div class="selectors">
               <div ng-model="playerSelectorModel" uib-btn-radio="'kap'" class="kap select">Kapsuli Player</div>
-              <div ng-model="playerSelectorModel" uib-btn-radio="'star'" class="star select">All Star 2016</div>
-              <div ng-model="playerSelectorModel" uib-btn-radio="'lcs'" class="lcs select">LCS 2016</div>
+              <div ng-model="playerSelectorModel" uib-btn-radio="'lcs'" class="lcs select">HearthStone</div>
+              <div ng-model="playerSelectorModel" uib-btn-radio="'star'" class="star select">Lol All-Star</div>
             </div>
           </div>
         </div>
@@ -94,10 +92,10 @@
                 <p>• Real estate for additional revenue stream through extended sponsor exposure.</p>
               </div>
               <div ng-show="playerSelectorModel === 'lcs'" class="lcsDescription">
-                <h1>LCS 2016 Player</h1>
+                <h1>HearthStone Player</h1>
                 <p>• Improved brand exposure</p>
-                <p>• Integration capabilities for multiple API to feed information about games being played, player stats or schedules.</p>
-                <p>• Link to external ressources (LolEsport website for example).</p>
+                <p>• Integration capabilities for multiple API to feed information about games being played (Decks, stats)</p>
+                <p>• Link to external ressources (HearthStone, Battle.net).</p>
               </div>
               <div ng-show="playerSelectorModel === 'star'" class="starDescription">
                 <h1>All Star 2016 Player</h1>
@@ -112,7 +110,7 @@
         <div class="decoBot">   </div>
       </div>
       <div class="box skillsIntro">
-        <p>What will I be bringing as a Rioter ?</p>
+        <p>What will I be bringing to the table ?</p>
         <div class="decoTop"></div>
         <div class="decoBot"></div>
       </div>
@@ -127,7 +125,6 @@
         </div>
         <div class="skillContent">
           <div ng-show="skillSelectorModel === 'tool'" class="content tool">
-            <p class="quote">"I am a mechanical player. I can CS well and land clutch skill shots."</p>
             <p>I have not only a professional grade mastery of common tools used across the creative industry, but also a strong working experience with front-end web development (user interface, user experience). I am also able to code using the best modern practices.</p>
             <p>This combination of abilities allows me to understand the possibilities and limitations of implementing certain features in a digital space. It also provides me with the means to interact with both designers and developers to establish efficient channels of communication. </p>
             <p class="note">Design : Adobe Creative Suit (Photoshop, Illustrator, InDesign, After Effect, Edge Animate, etc.), Sketch, photography, 3D renderings...</p>
@@ -154,7 +151,6 @@
             </div>
           </div>
           <div ng-show="skillSelectorModel === 'product'" class="content product">
-            <p class="quote">"I have game knowledge, and I know how to analyse meta trends" </p>
             <p>My experience with Kapsuli brought me a strong understanding of how to build a product catering to the gaming community. In the process I have encountered many situations, from brainstorming ideas, establishing strong UX and UI foundations, technical development problem solving, media campaign implications, adressing community feedback and modifications entailed by it.</p>
             <p>I have learned that to build a successful product that resonates and engages with the gaming community, one needs to communicate not only with the hard core players, reddit investigators, and meme creators but also with the casual players, with very few fantasy and game-related references.</p>
             <p>I can identify with those two audiences and discern their current and future needs.</p>
@@ -167,7 +163,6 @@
             </div>
           </div>
           <div ng-show="skillSelectorModel === 'knowledge'" class="content knowledge">
-            <p class="quote">"I have spent over 150 days of my life on league of legends"</p>
             <p>I strive to be proud of what I am building, and this pride not only pushes me to deliver a strong product but also challenges me to be better and more efficient at what I do. I pride myself in constantly learning and growing as a designer.</p>
             <p>I have dedicated this last year to building Kapsuli. I now wish to bring all my experiences to bear and help further improve the game that I love or build new content and products for Riot Games.</p>
             <div class="dedicationDeco"><img src="./img/dedication2.svg" alt=""></div>
@@ -176,7 +171,6 @@
             <p>I keep myself informed of the latest design and tech trends to make the best use of current and upcoming innovation in the field I am working in.  </p>
           </div>
           <div ng-show="skillSelectorModel === 'teamwork'" class="content teamwork">
-            <p class="quote">"I am a Shen one-trick pony and will not hesitate to come to the rescue and make clutching pro flash taunts."</p>
             <p>Although I am very efficient working alone, I work best as part of a unit. I enjoy working with others and take pride in facilitating communication between different trades. I also work well under pressure and deliver high quality product in a timely fashion.</p>
             <p>I have working experience using tools below to improve team coordination and workflow, either to enhance communication within the team or to devise work protocols to ensure an efficient work environment. </p>
             <div class="iconBox"> <a href="https://slack.com/" target="_blank">
@@ -249,7 +243,7 @@
             <div ng-model="navBtnModel" uib-btn-radio="'kapsuli'" ng-class="{'on': scroll &gt; 700 &amp;&amp; scroll &lt; 1900}" class="description">Kapsuli</div></a><a anchor-smooth-scroll="skillsAnchor">
             <div ng-model="navBtnModel" uib-btn-radio="'skills'" ng-class="{'on': scroll &gt; 1900 &amp;&amp; scroll &lt; 2600}" class="description">Skills</div></a><a anchor-smooth-scroll="resumeAnchor">
             <div ng-model="navBtnModel" uib-btn-radio="'resume'" ng-class="{'on': scroll &gt; 2600 &amp;&amp; scroll &lt; 3400}" class="description">Resume</div></a><a anchor-smooth-scroll="contactAnchor">
-            <div ng-model="navBtnModel" uib-btn-radio="'contact'" ng-class="{'on': scroll &gt; 3400}" class="description">Contact</div></a></div><a href="https://github.com/goodmorningnelson/riot-app" target="_blank">
+            <div ng-model="navBtnModel" uib-btn-radio="'contact'" ng-class="{'on': scroll &gt; 3400}" class="description">Contact</div></a></div><a href="https://github.com/goodmorningnelson/blizzard-application" target="_blank">
           <div class="githubLink">
             <div class="tooltipGit">Access the GitHub Repo of this page.</div>
           </div></a>
